@@ -17,6 +17,7 @@ class APOSMM(PersistentGenInterfacer):
     def __init__(
         self,
         vocs: VOCS,
+        localopt_method: str = "LN_BOBYQA",
         History: npt.NDArray = [],
         persis_info: dict = {},
         gen_specs: dict = {},
